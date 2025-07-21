@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+/* Versão mobile */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card{
+    background-color: pink;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Versão desktop */
+
+@media (min-width: 768px) {
+
+.container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+}

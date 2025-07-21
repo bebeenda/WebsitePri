@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Versão mobile */
+
+/* Section 1 */
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* Section 2 */
+
+.section2 > div{
+    margin-top: 15px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.video_container {
+    display: flex;
+    justify-content: center;  /* centraliza horizontalmente */
+    align-items: center;      /* centraliza verticalmente, se necessário */
+}
+
+.video_loop {
+    width: 50%;  
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+}
+
+.botao{
+    background-color: rgb(255, 214, 227);
+    color:  rgb(217, 79, 123);
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 17px;
+    border: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.botao:hover{
+    background-color:  rgb(217, 79, 123);
+    cursor: pointer;
+    color: white;
+}
+
+/* Section 3 */
+
+.section3 > div{
+    margin-top: 15px;
+}
+
+/* Versão desktop */
+@media (min-width: 768px) {
+
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+   .container p{
+    padding-left: 50px;
+    text-align: justify;    
+
+   }
+
+    .container > div:first-child {
+        flex: 1; /* texto ocupa menos espaço */
+        max-width: 50%; /* limite do texto */
+        /* text-align: left; */
+    }
+    
+      .container_coluna {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1; /* imagens ocupam mais espaço */
+        max-width: 50%;
+    }
+    
+      .container_coluna img {
+        width: 60%; /* imagem ocupa toda a largura possível */
+        height: auto;
+    }
+
+      /* Section 2 */
+
+      .container2{
+        display: flex;
+        flex-direction: row;
+        /* align-items: flex-start; */
+        text-align: justify;
+        gap: 40px;
+    }
+
+      .video_container{
+        flex: 1;
+        max-width: 50%; /* ocupa mais espaço */
+    }
+
+      .video_loop {
+        width: 60%;  
+        height: auto;
+        border-radius: 8px;
+        display: block;
+    }
+
+      .container2 > div:last-child {
+        flex: 1;
+        max-width: 40%; /* texto ocupa menos espaço */
+    }
+
+    .container3{
+        display: flex;
+        flex-direction: column;
+    }
+    
+      
+}

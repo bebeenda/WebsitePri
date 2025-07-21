@@ -91,6 +91,12 @@ footer p{
   .botao-topo:hover {
     transform: rotate(-5deg);
   } 
+
+  p{
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
 /* Versão Mobile */
 
 /* MENU */
@@ -157,7 +163,6 @@ footer p{
 #menu-toggle:checked + .menu-icon + .menu-list {
   display: flex;
 }
-    
 
 
 
@@ -166,7 +171,7 @@ footer p{
 
     p{
       font-size: 17px;
-      line-height: 1.5;
+      line-height: 2.0;
     }
 
     section{
