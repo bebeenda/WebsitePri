@@ -11,10 +11,10 @@
     <header>
         <div>
             <nav class="menu">
-                <img class="logo"
-                src="img/logo.webp" 
-                srcset="img/logo_mobilepng.webp 140w, img/logo.webp 1000w"
-                sizes="(max-width: 767px) 140px, (max-width:1023) 1000px"
+                <img class="logo" id="unha_ancora"
+                src="img/logo_maior.webp" 
+                srcset="img/logo_mobilepng.webp 140w, img/logo_mobilepng 140w"
+                sizes="(max-width: 767px) 140px, 140px"
                 alt="imagem da logo"
                 >
                     <input type="checkbox" id="menu-toggle" />
@@ -24,7 +24,7 @@
                 <li><a href="">Sobre mim</a></li>
                 <li><a href="">Portifólio</a></li>
                 <li><a href="">Curiosidades</a></li>
-            </ul>
+            </ul>   
         </nav>
     </div>
     </header>
@@ -33,10 +33,11 @@
         <section class="section1">
             <div>
                 <div>
-                    <h2>Não faça drama, faça as unhas</h2>
+                    <h2 >Não faça drama, faça as unhas</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum eveniet doloremque cumque delectus possimus! Beatae at fuga sunt dolorem incidunt, repellendus eius ab natus delectus autem! Doloremque debitis repudiandae aperiam!</p>
                 </div>
 
+            <div class="imagemUnha">
                 <div>
                     <img 
                     src="img/unha_vermelha.webp" 
@@ -45,14 +46,25 @@
                     alt="Imagem unha pintada de vermelho">
                 </div>
 
-             
+                <div>
+                    <img 
+                    src="img/unha_caneca.webp" 
+                    srcset="img/unha_caneca_mobile.webp 400w, img/unha_caneca.webp 1088w"
+                    sizes="(max-width: 767px) 400px, (max-width:1023px) 1088px"
+                    alt="Imagem unha pintada de vermelho segurando uma caneca">
+                </div>
+
+            </div>
             </div>
 
         </section>
 
         <section class="section2">
-            <div>
-                <h2>Por que escolher a Pri</h2> 
+        <div>
+        <div class="titulo">
+            <h2>Por que escolher a Pri</h2> 
+        </div>
+            <div class="atributos">
 
                 <div>
                     <div class="esmalte">
@@ -81,7 +93,8 @@
                     <h3>Produtos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam optio quae atque quasi obcaecati eum voluptatum dignissimos magni. Ducimus eos atque quas incidunt consequatur rerum consequuntur odio! Perspiciatis, laboriosam modi!</p>
                 </div>
-
+            </div>
+            <div class="monstruarioImg">
                 <div>
                     <img 
                     src="img/monstruario_desktop.webp" 
@@ -98,49 +111,137 @@
                     alt="imagem de esmaltes">
                 </div>
             </div>
+        </div> 
         </section>
 
         <section class="section3">
+        <div>
             <div>
-                <h2>Conheça o espaço</h2>
-                <p>Ambiente climatizado e comfortável para melhor atendimento</p>
-
+            <h2>Conheça o espaço</h2>
+        </div>
+            <div class="container">
+            <div>
                 <div>
-                    <img 
-                    src="img/espaco2.webp"
-                    srcset="img/espaco2_mobile.webp 400w, img/espaco2.webp 1088w" 
-                    sizes="(max-width: 767px) 400px, (max-width: 1023px) 1088px"
-                    alt="imagen do espaço de trabalho"
-                    >
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, optio dolorum. Asperiores
+                        nesciunt animi officiis nostrum ea rerum nisi natus, veritatis, dolorum dolor hic ducimus eum neque
+                        porro, voluptate culpa!</p>
                 </div>
-
+            
                 <div>
-                    <img 
-                    src="img/espaco1.webp"
-                    srcset="img/espaco1_mobile.webp 400w, img/espaco1.webp 1088w" 
-                    sizes="(max-width: 767px) 400px, (max-width: 1023px) 1088px"
-                    alt="imagen do espaço de trabalho"
-                    >
+                    <img src="img/espaco2.webp" srcset="img/espaco2_mobile.webp 400w, img/espaco2.webp 1088w"
+                        sizes="(max-width: 767px) 400px, (max-width: 1023px) 1088px" alt="imagen do espaço de trabalho">
                 </div>
-
             </div>
+            
+            <div>
 
+                <div>
+            
+                    <img src="img/espaco1.webp" srcset="img/espaco1_mobile.webp 400w, img/espaco1.webp 1088w"
+                        sizes="(max-width: 767px) 400px, (max-width: 1023px) 1088px" alt="imagen do espaço de trabalho">
+                </div>
+
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, optio dolorum. Asperiores
+                        nesciunt animi officiis nostrum ea rerum nisi natus, veritatis, dolorum dolor hic ducimus eum neque
+                        porro, voluptate culpa!</p>
+                </div>
+            
+               
+            </div>
+            
+            </div>
+        </div>
         </section>
 
         <section class="section4">
-        <div>
-            <h2>O que dizem nossas clientes</h2>
+            <div>
+                <h2>O que dizem as clientes</h2>
+                <div class="carrossel">
+                    <div class="comentario ativo">
+                        <p>"Atendimento humanizado com direito a terapia, excelente profissional, estoque sempre renovado com as cores das tendências e local de trabalho bem aconchegante. "</p>
+                        <span>— Susana P.</span>
+                        <span>Cliente a mais de 6 anos</span>
+                    </div>
 
-            <div class="comentarios-container">
-               
+                    <div class="comentario">
+                        <p>"O trabalho da Priscilla é excelente! Não faz com pressa, sempre atenta nos detalhes. A esmaltação é perfeita! E sem contar que ela é super divertida, uma ótima pessoa!"</p>
+                        <span>— Natasja L.</span>
+                        <span>Cliente a mais de 6 anos</span>
+                    </div>
+
+                    <div class="comentario">
+                        <p>"A pri é top e não largo! O diferencial é que fazer unhas com ela é uma terapia. "</p>
+                        <span>— Letícia F.</span>
+                        <span>Cliente a mais de 15 anos</span>
+                    </div>
+
+                    <div class="comentario">
+                        <p>"Domínio de técnicas como cutilagem, esmaltação. Capricho no acabamento e simetria, esmaltação sem borrar e com boa durabilidade."</p>
+                        <span>— Franciele C.</span>
+                        <span>Cliente a 4 anos</span>
+                    </div>
+
+                    <div class="comentario">
+                        <p>"A Pri é uma profissional de excelência. Não  bastasse isso, é uma grande amiga, parceira e praticamente um "psicóloga" da maioria de suas clientes."</p>
+                        <span>— Eliane F.</span>
+                        <span>Cliente a 20 anos</span>
+                    </div>
+
+                    <div class="comentario">
+                        <p>"Cutilulagem de verdade unhas bem feitas e duradouras, atenção, respeito pelo próximo faz tudo para atender e satisfazer o cliente "</p>
+                        <span>— Carolina K.</span>
+                        <span>Cliente a mais de 6 anos</span>
+                    </div>
+
+                    <div class="comentario">
+                        <p>"Sempre buscando as inovações lançadas no mercado, para que suas clientes se sintam mais bonitas e com a auto estima elevada. Para mim, é o meu momento de cuidado pessoal, onde relaxo e me deixo ser cuidado por uma profissional excelente, que se tornou uma amiga querida!"</p>
+                        <span>— Fabíola R.</span>
+                        <span>Cliente a mais de 6 anos</span>
+                    </div>
+
+                    <div class="comentario">
+                        <p>"Priscilla é uma pessoa muito verdadeira, humana e competente. Sabe fazer uma unha muito bem feita e com um acabamento impecável. Amo o trabalho dela."</p>
+                        <span>— Miriam.</span>
+                        <span>Cliente a mais de 10 anos</span>
+                    </div>
+
+                    
+                    <div class="comentario">
+                        <p>"Diferencial na qualidade para tirar cutículas e esmaltaçao e Durabilidade "</p>
+                        <span>— Valquiria.</span>
+                        <span>Cliente a mais de 10 anos</span>
+                    </div>
+
+                    <div class="comentario">
+                        <p>" Os diferenciais da Pri são que as unhas ficam sempre lindas, bem feitas e com um acabamento impecável. O ambiente é sempre limpo, organizado e me sinto super confortável durante todo o atendimento. Ela é maravilhosaaa!! "</p>
+                        <span>— Fernanda.</span>
+                        <span>Cliente a mais de 6 anos</span>
+                    </div>
+
+                </div>
             </div>
-        </div>
-          
-          </section>
+        </section>
     </main>
 
     <footer>
-        
+<div>
+    <div>
+        <div>
+            <img src="img/logo_instagram.webp" alt="logo do instagram">
+        </div>
+        <div>
+            <p>priscilla_pitilla</p> 
+        </div>
+       
+    </div>
+   
+</div>
+<p>Todos os direitos reservados</p>
     </footer>
+
+    <a href="#unha_ancora">
+        <img src="img/ancora.webp" alt="Voltar ao início" class="botao-topo">
+      </a>
 </body>
 </html>
