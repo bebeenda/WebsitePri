@@ -11,10 +11,11 @@
 
   }
 
-  .section1 img{
+  .section1 > div > div{
     text-align: center;
-    width: 100%;
   }
+
+
 
   /* Section 2 */
 
@@ -149,6 +150,197 @@
   }
 
 
+  /* animação da página com css efeito cascata */
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Classe base para animação */
+  .fade-in-up {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+  }
+  
+  /* ---------- SECTION 1 ---------- */
+  
+  /* Título e parágrafos */
+  .section1 > div > div > h2,
+  .section1 > div > div > p {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+  }
+  
+  .section1 > div > div > h2 {
+    animation-delay: 0.2s;
+  }
+  .section1 > div > div > p:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .section1 > div > div > p:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .section1 > div > div > p:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .section1 > div > div > p:nth-child(5) {
+    animation-delay: 1s;
+  }
+  .section1 > div > div > p:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  .section1 > div > div > p:nth-child(7) {
+    animation-delay: 1.4s;
+  }
+  
+  /* Imagens na div .imagemUnha */
+  .imagemUnha > div {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+  }
+  
+  .imagemUnha > div:nth-child(1) {
+    animation-delay: 1.6s;
+  }
+  .imagemUnha > div:nth-child(2) {
+    animation-delay: 1.8s;
+  }
+  
+  /* ---------- SECTION 2 ---------- */
+  
+  /* Título */
+  .section2 > div > .titulo > h2 {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+  }
+  
+  /* Cards atributos */
+  .section2 .atributos > div {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+  }
+  
+  .section2 .atributos > div:nth-child(1) {
+    animation-delay: 0.4s;
+  }
+  .section2 .atributos > div:nth-child(2) {
+    animation-delay: 0.7s;
+  }
+  .section2 .atributos > div:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  /* Imagens monstruário */
+  .section2 .monstruarioImg > div {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+  }
+  
+  .section2 .monstruarioImg > div:nth-child(1) {
+    animation-delay: 1.3s;
+  }
+  .section2 .monstruarioImg > div:nth-child(2) {
+    animation-delay: 1.6s;
+  }
+  
+  /* ---------- SECTION 3 ---------- */
+  
+  /* Título */
+  .section3 > div > div > h2 {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+  }
+  
+  /* Parágrafos e imagens da primeira linha */
+  .section3 .container > div:nth-child(1) > div,
+  .section3 .container > div:nth-child(2) {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+  }
+  
+  .section3 .container > div:nth-child(1) > div:nth-child(1) {
+    animation-delay: 0.4s;
+  }
+  .section3 .container > div:nth-child(1) > div:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  .section3 .container > div:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+  
+  /* Parágrafo e imagem da segunda linha */
+  .section3 .container > div:nth-child(3) > div:nth-child(1),
+  .section3 .container > div:nth-child(3) > div:nth-child(2) {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+  }
+  
+  .section3 .container > div:nth-child(3) > div:nth-child(1) {
+    animation-delay: 1s;
+  }
+  .section3 .container > div:nth-child(3) > div:nth-child(2) {
+    animation-delay: 1.2s;
+  }
+  
+  /* ---------- SECTION 4 ---------- */
+  
+  /* Título */
+  .section4 > div > h2 {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+  }
+  
+  /* Botão agendar */
+  .section4 form {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-delay: 3.4s;
+  }
+  
+
 /* Versão desktop */
   @media (min-width: 768px) {
 
@@ -188,6 +380,11 @@
         flex-direction: row ;
       }
 
+      /* para deixar as div mais alinhadas */
+      .atributos > div{
+        width: 33%;
+      }
+
       .titulo{
         padding: 0px;
         padding-top: 30px;
@@ -196,13 +393,13 @@
 
       .section2 > div > div{
         margin: auto;
-        padding: 30px;
+        padding: 0px 30px 0px 30px;
       } 
 
       .section2 p{
         padding: 25px;
         margin-bottom: 10px;
-        text-align: justify;
+        text-align: center;
       }
 
       .monstruarioImg{

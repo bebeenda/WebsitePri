@@ -7,23 +7,96 @@
 /* Versão mobile */
 
 /* Section 1 */
+
+
 .container{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 30px;
 }
 
+.section1 strong{
+    color: rgb(217, 79, 123);
+}
 
+/* Animação da esquerda pra direita (preferi assim pra acompanhar o layout da página) */
+@keyframes fadeInLeftToRight {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animação para o título h2 */
+  .section1 > div > h2 {
+    opacity: 0;
+    animation: fadeInLeftToRight 1s ease forwards;
+    animation-delay: 0.1s;
+  }
+  
+  /* Aplica fade-in horizontal sequencial ao container do texto */
+  .section1 > .container > div:first-child p,
+  .section1 > .container > div:first-child p strong {
+    opacity: 0;
+    animation: fadeInLeftToRight 1s ease forwards;
+  }
+  
+  /* Delay nos parágrafos para efeito cascata da esquerda pra direita */
+  .section1 > .container > div:first-child p:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  .section1 > .container > div:first-child p:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  .section1 > .container > div:first-child p:nth-child(3) {
+    animation-delay: 0.7s;
+  }
+  .section1 > .container > div:first-child p:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+  .section1 > .container > div:first-child p:nth-child(5) {
+    animation-delay: 1.1s;
+  }
+  .section1 > .container > div:first-child p:nth-child(6) {
+    animation-delay: 1.3s;
+  }
+  .section1 > .container > div:first-child p:nth-child(7) {
+    animation-delay: 1.5s;
+  }
+  
+  /* Animação fade-in para as imagens */
+  .section1 .container_coluna img {
+    opacity: 0;
+    animation: fadeInLeftToRight 1s ease forwards;
+  }
+  
+  /* Delay para as imagens aparecerem em sequência */
+  .section1 .container_coluna > div:nth-child(1) img {
+    animation-delay: 1.7s;
+  }
+  .section1 .container_coluna > div:nth-child(2) img {
+    animation-delay: 2s;
+  }
 /* Section 2 */
 
 .section2 > div{
     margin-top: 15px;
 }
 
+.section2 strong{
+    color: rgb(217, 79, 123);
+}
+
 .container2{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 30px;
 }
 
 .video_container {
@@ -44,32 +117,25 @@
     flex-direction: column;
 }
 
-.botao{
-    background-color: rgb(255, 214, 227);
-    color:  rgb(217, 79, 123);
-    font-weight: bold;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 17px;
-    border: none;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-top: 15px;
-    font-family: "DM Sans", sans-serif;
-}
-
-.botao:hover{
-    background-color:  rgb(217, 79, 123);
-    cursor: pointer;
-    color: white;
-}
-
 /* Section 3 */
 
 .section3 > div{
     margin-top: 15px;
 }
+
+.section3 p{
+  padding: 0px 30px 0px 40px;
+  text-align: center;
+}
+.cafe{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  text-align: center;
+}
+
+
 
 /* Versão desktop */
 @media (min-width: 768px) {
@@ -138,5 +204,18 @@
         flex-direction: column;
     }
     
+    /* Section 3 */
+
+    .section3 p{
+      padding: 0px 60px 0px 50px;
+      text-align: justify;
+    }
+    .cafe{
+      display: flex;
+      flex-direction: row;
+      padding: 30px;
+      gap: 30px;
+      justify-content: center;
+    }
       
 }
