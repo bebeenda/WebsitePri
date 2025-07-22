@@ -27,6 +27,12 @@ img {
 
 }
 
+
+
+.imgpadrao{
+  width: 80%;
+}
+
 section{
     /* background-color: white; */
     /* background-color:  rgb(255, 253, 248); */
@@ -210,6 +216,10 @@ footer p{
       width: 1200px;
       margin:auto;
     } 
+
+    .imgpadrao{
+      width: 100%;
+    }
 
   /* Ancora */
   .botao-topo {
